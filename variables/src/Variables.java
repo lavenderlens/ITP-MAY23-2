@@ -50,9 +50,14 @@ public class Variables {
 //        user input
         Scanner scanner = new Scanner(System.in);
 
-        int int1 = scanner.nextInt();
+//        int int1 = scanner.nextInt();
 
 
+        // Java string formatting
+
+        String output = String.format("My greeting is %s and my VAT rate is %.2f", s, vatRate);
+        System.out.println(output);
+        System.out.printf("My greeting is %s and my VAT rate is %.2f\n", s, vatRate);//doesn't include a new line
 
 
     }
