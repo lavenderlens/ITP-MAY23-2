@@ -13,7 +13,8 @@ print("Is taxable: " + str(isTaxable))
 # what about this?
 print("All details: " + "\nName: " + name + "\nNumber: " + str(number) + "Balance: " + str(balance) + "Is taxable: " + str(isTaxable))
 # Python 3 > placeholders with .format()
-print("All details: \nName: {} \nNumber: {} \nBalance: {} \nIs taxable: {}".format(name,number,balance,isTaxable))
+print("All details: \nName: {} \nNumber: {} \
+       \nBalance: {} \nIs taxable: {}".format(name,number,balance,isTaxable))
 # Python 3.5 > placeholders with f strings
 # Python 3.7 > placeholders with triple f strings
 print(f"""
