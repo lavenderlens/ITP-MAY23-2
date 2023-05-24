@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWITCH FOR WEB</title>
+</head>
+<body>
+    <h1>Switch for web</h1>
+    <select name="size" id="size">
+                <option>CHOOSE SIZE:</option>
+
+        <option value="S">SMALL</option>
+        <option value="M">MEDIUM</option>
+        <option value="L">LARGE</option>
+        <option value="2XL">@XL</option>
+
+    </select>
+    <script>
+        var orderLine = [];
+        document.querySelector("#size").addEventListener("change", ()=>{
+
+            var size = document.querySelector("#size").value;
+                    switch(size) {
+            case "S":
+                console.log("You chose SMALL");
+                orderLine[0] = "S"; //you can do multiple things in each case statement
+                break;
+            case "M":
+                console.log("You chose Medium");
+                orderLine[0] = ""; //you can do multiple things in each case statement
+                break;
+            case "L":
+                console.log("You chose LARGE");
+                orderLine[0] = "L"; //you can do multiple things in each case statement
+                break;
+            case "2XL":
+                console.log("You chose 2XLARGE");
+                orderLine[0] = "2XL"; //you can do multiple things in each case statement
+                break;
+            default:
+                console.log("choose from S,M,L,2XL");
+        }
+        })
+    </script>
+</body>
+</html>
